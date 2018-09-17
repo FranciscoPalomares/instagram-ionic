@@ -1,0 +1,38 @@
+<ion-content padding>
+  <h1 center text-center>Appgram</h1>
+
+  <div padding>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+      <ion-item>
+        <ion-input type="text" placeholder="Username" required ngModel name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" required ngModel name="password"></ion-input>
+      </ion-item>
+
+      <div center text-center>
+        <ion-button type="submit" [disabled]="f.invalid" expand="block" fill="outline" color="light" class="boton-facebook">Login</ion-button>
+      </div>
+    </form>
+
+    <p center text-center>Forgot your login details? <strong>Get help signing in</strong></p>
+  </div>
+
+
+  <div class="strike">
+    <span>OR</span>
+  </div>
+
+  <div center text-center>
+    <ion-button fill="clear" color="light" size="default" class="boton-facebook">
+      <ion-icon name="logo-facebook"></ion-icon> &nbsp;Login with facebook
+    </ion-button>
+    <ion-button fill="clear" color="light" size="default" class="boton-facebook">
+      <ion-icon name="logo-google"></ion-icon> &nbsp;Login with Google
+    </ion-button>
+  </div>
+
+  <div class="footer" [hidden]="IsKeyboardOpen">
+    <span>Don't have an account? <strong [routerLink]="['/register']">Sign up here</strong>.</span>
+  </div>
+</ion-content>

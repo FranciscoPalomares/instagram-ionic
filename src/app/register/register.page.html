@@ -1,0 +1,62 @@
+<ion-content padding>
+
+  <div center text-center id="user">
+    <ion-icon name="ios-contact" color="light"></ion-icon>
+  </div>
+
+
+  <ion-segment mode="md" color="light" [(ngModel)]="selected">
+    <ion-segment-button value="phone">
+      Phone
+    </ion-segment-button>
+    <ion-segment-button value="email">
+      Email
+    </ion-segment-button>
+  </ion-segment>
+
+  <br>
+
+  <div [ngSwitch]="selected">
+    <div padding center text-center *ngSwitchCase="'phone'">
+      <ion-item>
+
+
+        <ion-select>
+          <ion-select-option value="+34" selected>+34 España</ion-select-option>
+          <ion-select-option value="+50">+50 frfrfr</ion-select-option>
+        </ion-select>
+
+
+
+        &nbsp;
+        <ion-input type="number" max="10" placeholder="Phone"></ion-input>
+
+      </ion-item>
+
+      <div center text-center>
+        <ion-button expand="block" fill="outline" color="light" class="boton-facebook">
+          Next
+        </ion-button>
+      </div>
+    </div>
+    <div padding center text-center *ngSwitchCase="'email'">
+      <ion-item>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <div center text-center>
+        <ion-button expand="block" fill="outline" color="light" class="boton-facebook">
+          Next
+        </ion-button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="footer">
+    <span>Have an account? <strong [routerLink]="['']">Sign In here</strong>.</span>
+  </div>
+</ion-content>
