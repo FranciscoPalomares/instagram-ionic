@@ -1,5 +1,5 @@
 # instagram-ionic
-Login like instagram in ionic
+Login like instagram in ionic 4 Beta
 
 <a href="https://instagram-3034e.firebaseapp.com">
   <img  src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" width="50" height="70"/>
