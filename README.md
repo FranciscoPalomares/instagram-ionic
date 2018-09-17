@@ -6,4 +6,4 @@ Login like instagram in ionic
 </a>
 
 <p align="center">
-<img  src="https://s3.amazonaws.com/img0.recordit.co/vQl2KUV8OK.mp4?AWSAccessKeyId=AKIAINSRFOQXTN4DT46A&Expires=1537178588&Signature=xB9tEfyHON5uZk4YqIHfFxHdCv0%3D" width="300" height="500" />
+<img  src="http://g.recordit.co/vQl2KUV8OK.gif" width="300" height="500" />
