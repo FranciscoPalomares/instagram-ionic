@@ -7,3 +7,10 @@ Login like instagram in ionic 4 Beta
 
 <p align="center">
 <img  src="http://g.recordit.co/vQl2KUV8OK.gif" width="300" height="500" />
+<br>
+<br>
+<p align="center">
+  Credits to:
+   <br>
+  https://github.com/yannbf/ionic3-components
+ </p>
